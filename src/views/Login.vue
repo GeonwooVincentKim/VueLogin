@@ -16,8 +16,7 @@
                     <label for="passwordInput">비밀번호</label>
                     <input type="password" id="passwordInput">
                 </div>
-                <button class="btn-click" @click.prevent="doLogin">
-                </button> 
+                <button class="btn-click" @click.prevent="doLogin">로그인</button> 
             </form>
         </div>
     </div>
@@ -45,7 +44,7 @@
 
         methods: {
             loginAPI() {
-                const url = '/web/api/'
+                const url = 'http://bit.ly/2mTM3nY'
 
                 return this.$x.http(url, {
                     params: {
